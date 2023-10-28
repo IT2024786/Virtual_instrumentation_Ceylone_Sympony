@@ -1,0 +1,207 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  color: #333;
+
+}
+
+header {
+  background-color: #0e0a06;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.header-bar {
+  background-color: #575656;
+  padding: 1rem 0;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  padding: 0.5rem;
+}
+
+nav a:hover {
+  background-color: #444;
+}
+
+.hero {
+  background-image: url('ceylon_symphony_hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+
+.info {
+  background-color: #444;
+  color: #f2f2f2;
+  padding: 2rem;
+  text-align: center;
+}
+
+.info h3 {
+  font-size: 1.8rem;
+  color: #d9bfa0;
+}
+
+.info p {
+  font-size: 1.2rem;
+}
+
+footer {
+  background-color: #050403;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.button {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px; /* Adjust the value to control the roundness of the edges */
+  width: 250px; /* Increase the width as needed */
+  height: 150px; /* Increase the height as needed */
+  color: #fff; /* Set the initial text color to white */
+}
+
+.button img {
+  width: 250px;
+  height: 150px; /* Adjust the width and height according to your image size */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.button:hover img {
+  transform: scale(1.1); /* Increase the scale value to make the image slightly larger on hover */
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay on hover */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.button:hover::before {
+  opacity: 1; /* Show the overlay on hover */
+  color: #000; /* Change text color to black on hover */
+  font-size: 18px; /* Font size for the text */
+}
+
+/* Additional styles to enhance the appearance */
+.button-container {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.button {
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-text {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:hover .button-text {
+  display: block;
+}
+
+
+#myCanvas {
+        display: block;
+        margin: 40px auto;
+        border: 2px solid #ccc;
+        height: 600px;
+        width: 800px;
+        
+    }
+
+    .Recoder_buttons {
+      text-align: center;
+      margin: 20px;
+    }
+  
+    .Recoder_buttons button {
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+  
+    .Recoder_buttons button:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  
+    .Recoder_buttons button:hover {
+      background-color: #0056b3;
+    }
+  
+    .Recoder_buttons audio {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .gui-container {
+      position: absolute;
+      top: 255px; /* Adjust as needed */
+      left: 906px; /* Adjust as needed */
+      z-index: 1; /* Ensure it's on top of the canvas */
+    }
+    
